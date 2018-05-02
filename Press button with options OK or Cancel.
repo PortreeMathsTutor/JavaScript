@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+
+
+<button onclick="myFunction()">Press button</button>
+
+
+
+<script>
+function myFunction() {
+    var TheVariable;
+    if (confirm("This is the text that goes in the button where it says OK or Cancel")) {
+        TheVariable = "You pressed OK!";
+    } else {
+        TheVariable = "You pressed Cancel!";
+    }
+    document.getElementById("This is where the function is displayed").innerHTML = TheVariable;
+}
+</script>
+
+<p id="This is where the function is displayed"></p>
+
+</body>
+</html>
