@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>3n + 1</title>
+</head>
+<body>
+<p>
+	The Collatz conjecture (also known as 3n+1 conjecture) is a conjecture that applying the following algorithm to any number we will always eventually reach one:
+	<br />
+	<code>
+		if(number is even) number = number / 2<br />
+		if(number is odd) number = 3*number + 1
+	</code>
+</p>
+<input type="number" id="input" placeholder="0" />
+<input type="submit" id="submit" value="Submit" />
+<br />
+<div id="output"></div>
+<script>
+var myFunction = function(n){
+	while (n > 1) {
+    n = n % 2 ? 3 * n + 1 : n / 2;
+	document.write(" "+n+", ");
+  }
+}
+// I/O stuff
+document.getElementById("submit").addEventListener("click", function() {
+	input = document.getElementById("input").value;
+	document.getElementById("output").innerHTML = myFunction(input);
+});
+</script>
+</body>
+</html>
