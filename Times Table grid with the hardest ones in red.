@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body{
+
+  font-family: Verdana;
+}
+</style></head>
+<body>
+
+
+
+<script>
+var color_td;
+document.write("<table border='1px'>");
+
+for(var i = 1; i < 11; i++) {
+
+	document.write("<tr style='height:30px;'>");
+
+	for(var j = 1; j < 11; j++) {
+
+		if(i>5 && i<10 && j<10 && j>5) {
+			color_td = "#f00";
+		}
+		else {
+			
+			color_td = "#0f0";
+		}
+		
+
+		document.write("<td style='width:30px;background-color:" + color_td + "'>" + i*j + "</td>");
+	}
+	document.write("</tr>");
+}
+
+document.write("</table>");
+</script>
+
+<p id="demo"></p>
+
+</body>
+</html>
