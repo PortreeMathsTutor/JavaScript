@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<body>
+<input type="number" id="myNumber" value="2"> times
+<input onclick="myFunction()" type="number" id="mySecondNumber" value="2">
+  =<output id="myOutput"  ></output>
+<p>  <p/>
+<p>  <p/>
+<p id="secondDemo"></p>
+<p>  </p>
+<p>  </p>
+<input type="number" id="myThirdNumber" value="2"> divided by 
+<input onclick="mySecondFunction()" type="number" id="myFourthNumber" value="2">
+  =<output id="mySecondOutput"  ></output>
+<p>  <p/>
+<p>  <p/>
+
+<p id="secondDemo"></p>
+
+<script>
+function myFunction() {
+    var a = document.getElementById("myNumber").value;
+    var b = document.getElementById("mySecondNumber").value;
+    var c = a*b;
+    document.getElementById("myOutput").innerHTML =c;
+}
+function mySecondFunction() {
+    var d = document.getElementById("myThirdNumber").value;
+    var e = document.getElementById("myFourthNumber").value;
+    var f = d/e;
+    document.getElementById("mySecondOutput").innerHTML =f;
+}
+</script>
+
+</body>
+</html>
