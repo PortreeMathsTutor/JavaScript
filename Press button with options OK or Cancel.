@@ -1,13 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-
-
-
 <button onclick="myFunction()">Press button</button>
-
-
-
 <script>
 function myFunction() {
     var TheVariable;
@@ -19,8 +13,6 @@ function myFunction() {
     document.getElementById("This is where the function is displayed").innerHTML = TheVariable;
 }
 </script>
-
 <p id="This is where the function is displayed"></p>
-
 </body>
 </html>
