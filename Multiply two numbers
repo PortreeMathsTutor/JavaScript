@@ -7,7 +7,7 @@
 <input type="number" id="myNumber" value="2"> times
 <input type="number" id="mySecondNumber" value="2">
   =<output id="myOutput"  ></output>
-
+<p>  </p>
 
 <button onclick="myFunction()">Check answer</button>
 
