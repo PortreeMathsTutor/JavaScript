@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+ 
+<canvas id="canvas" width="600" height="470" style="border:none;">
+Your browser does not support the HTML5 canvas tag.</canvas>
+ 
+<script>
+
+ 
+var canvas = document.getElementById("canvas");
+var ctx = canvas.getContext("2d");
+
+ctx.fillStyle = "#00A308";
+ctx.beginPath();
+ctx.arc(150, 50, 5, 0, Math.PI * 2, true);
+ctx.closePath();
+
+ctx.fill();
+ctx.beginPath();
+ctx.arc(20, 85, 5, 0, Math.PI * 2, true);
+ctx.closePath();
+ctx.fill();
+
+ctx.beginPath();
+ctx.arc(160, 95, 5, 0, Math.PI * 2, true);
+ctx.closePath();
+ctx.fill();
+</script>
+ 
+</body>
+</html>
